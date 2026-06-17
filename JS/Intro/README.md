@@ -35,3 +35,33 @@ let top_Score =50;
 #  5. Summary
 I have learnt about how variables are declared with the let & const keywords the rules is should follow in naming variables .They naming styles allowed in naming variables.
 
+# Variables
+## Primitive variables
+primitive value are data  types that are not object and are not mutable 
+#### Analogy
+All primitive data type are immutable meaning the data inside that storage unit cannot be changed it can only be destroyed then replaced with another primitive data thats for storage containers declared using let
+## Example
+let energyDrink= "Redbull"
+energyDrink = "Monster"
+so when you let the storage locker means you allow change of the immutable primitive datas in this case "Redbull" to "Monster"
+### Note
+you cannot tamper with the data you can only trash it the make another primitive data that will be accepted with the let declared variable {storage locker}
+### Const declared primitive variables 
+once variables are declared using const that it the locker storage variable sticks with that data forever.
+## 3 ways to declare string variables
+####  Single ticks
+'Maziwa ni Tuzo'
+#### Double quotes
+"Maziwa in tuzo"
+#### Backtick
+`Maziwa ni Tuzo
+
+### Difference btn Null & Undefined
+both are lack of a value ie absense of a value
+but what is the difference?
+The difference is that undefined means a variable has just been assigned without being assigned a value bring error in your programme, whereas Null is the intentional abscence of a value , so remember to assign Null in the intentional abscence of a value don't assignt undefined to a variable in intentional ommition of a value.
+#### Example
+##### let casualtyInfo = Null
+
+
+
