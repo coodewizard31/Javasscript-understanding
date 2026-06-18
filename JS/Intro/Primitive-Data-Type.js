@@ -39,3 +39,12 @@ let undefinedVal=undefined //DONTwrite this way undefined
 console.log(undefinedVal)
 let undefinedValue=null // do this instead of using undefined above.
 console.log(undefinedValue)
+
+
+
+
+let energyDrink = "Redbull";
+energyDrink = "Monster";
+console.log(energyDrink)
+const pad ="Always";
+console.log(pad);

@@ -28,7 +28,7 @@ This is a style of naming variables consists of  both the first & second word st
 let StudentGrade = "A";
 let Topscore =50;
 ##  Snake Case
-A snake case is a type of style used in naming variables similar to camel case but in snake case the words are not together instead they are separated with the underscore.
+A snake case is a type of style used in naming variables ,in snake case the words are not together instead they are separated with the underscore & the starting letters are all lowercase.
 ### Example
 let student_Grade = "A";
 let top_Score =50;
