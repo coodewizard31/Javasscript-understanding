@@ -17,22 +17,22 @@ let strictInequality=val1!==val2
 console.log(`val1=${val1}!==val2=${val2}
     Ans ${strictInequality} its type is ${typeof strictInequality}`)
 //"30" not equal to 30 -> false
-let Tnequality=val1!=val2
+let inequality=val1!=val2
 console.log(`val1=${val1}!=val2=${val2}
-    Ans ${Inequality} its type is ${typeof Inequality}`)
+    Ans ${inequality} its type is ${typeof inequality}`)
 
 
 /* > gteater than a>b
 <Less than a<b
 greater than or equal to
 <= Less than or equal to */
-let num3=20;
-let numb=10
+let numb3=20;
+let numb4=10
 
 let str1="a"
 let str2="b"
 
-console.log(`num3=${numb3}and numb4=${numb4}`)
+console.log(`numb3=${numb3}and numb4=${numb4}`)
 console.log(`str1={str1}amd str2=${str2}`)
 console.log(`numb3>numb4 ${numb3>numb4}`)
 console.log(`str2>str1 ${str1>str2}`)
