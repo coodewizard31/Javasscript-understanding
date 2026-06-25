@@ -29,3 +29,24 @@ if (grossMonthlySalary <= 24000) {
   paye = grossMonthlySalary * (35 / 100);
 }
 console.log(`Your paye = ${paye}`);
+let nssf = 0;
+let employer = 0;
+if (grossMonthlySalary > 0 && grossMonthlySalary < 9000) {
+  console.log(`Sorry 900 is the minimum required`);
+} else if (grossMonthlySalary === 9000) {
+  // For salaries up to 9000, just calculate 6%
+  nssf = grossMonthlySalary * 0.06;
+  console.log(`Your Nssf=${nssf}`);
+} else if (grossMonthlySalary > 9000) {
+  //nssf calculation first
+  nssf = 9000 * 0.06;
+
+  // These calculation help us have nssf +rem
+  let rem = (grossMonthlySalary - 9000) * 0.06;
+  let employee = nssf + rem;
+  let employer = employee;
+
+  // Your calculation for when it is above 9000()
+  let totalNssf = nssf + rem + employer;
+  console.log(`Your nssf>9000  is ${employee} your total nssf${totalNssf}`);
+}
