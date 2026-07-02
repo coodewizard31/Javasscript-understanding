@@ -27,10 +27,26 @@ let rA = function rectangleArea(l, w) {
   return l * w;
 };
 
+function belief() {
+  console.log(`Father+Son+HolySpirit`);
+}
+let BV = function belief() {
+  console.log(`Father+Son+HolySpirit`);
+};
+//Arrow function
+//Creating an Arrow function
+/* 1.Create an anonymous function 
+    2. Remove the function keyword
+    3.between () <->{} put an arrow.
+    4.good practice ti have a variable as a const*/
 
-function belief(){
-    console.log(`Father+Son+HolySpirit`)
+//Call back function
+function curentTime() {
+  const currentTimestamp = new Date().toLocaleDateString();
+  //alert
+  alert(`Current Time ${currentTimestamp}`);
+  console.log(`Current Timestamp:${currentTimestamp} `);
 }
-let BV= function belief(){
-    console.log(`Father+Son+HolySpirit`)
-}
+//Now calling back time in the frame of time you want
+setInterval(curentTime,1000)
+//call backs is not about function
