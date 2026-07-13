@@ -86,3 +86,6 @@ console.log(
   `The engine_info numberis: ${car.manufacture["aka"]} and the typeof is:${typeof car.manufacture["aka"]}`,
 );
 
+
+
+car
