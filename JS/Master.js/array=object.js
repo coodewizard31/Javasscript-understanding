@@ -34,3 +34,17 @@ const arObj = {
 };
 console.table(ar);
 console.table(arObj);
+
+const data = require("./data.json");
+console.log(data);
+for (i = 0; i < data.length; data++) {
+  let title;
+  if (people[i].gender === "male") {
+    title = "Mr.";
+  } else {
+    title = "Ms.";
+  }
+  console.log(
+    `Dear ${title} ${people[i].name},we are sadly to notify you abt the failed request to the work you applied for`,
+  );
+}
