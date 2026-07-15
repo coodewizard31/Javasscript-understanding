@@ -50,37 +50,34 @@ Update dom elements.
   2.updating Content
   3.update the innerText
 */
-
-const otherFruits = ["Kiwi", "Pinapple", "Dragon Fruit"];
-const originalDiv = document.querySelector("#div1").innerHTML;
-//
-// console.log(originalDiv);
-
+/* below function tells me that the buttom is clicked its like a sensor*/
+const otherFruits = ["Mango", "Pinapple", "Passion"];
+const originalDiv = document.getElementById("div1").innerHTML;
+console.log(originalDiv);
 function original() {
-  console.log("original clicked");
-  //reset the div to its original value
-  document.querySelector("#div1").innerHTML = originalDiv;
-  //replace the original content
+  console.log("Original clicked");
+  //resets the div to its original value
+  document.getElementById("div1").innerHTML = originalDiv;
 }
-
 function replace() {
-  //  console.log("replace clicked");
-  const newHtml = `
-    <h3>List Chores</h3>
-    <ul>
-      <li class="list-item">Clean Bathroom</li>
-      <li class="list-item">Clean Kitchen</li>
-      <li class="list-item">Fetch Water</li>
-    </ul>
-  `;
-  document.querySelector("#div1").innerHTML = newHtml;
+  console.log("replace clicked");
+  const newHtml = `<h3>fights</h3>
+        <ul>
+            <li class="list-item">Tekwondo</li>
+            <li class="list-item">Kaboera</li>
+            <li class="list-item">Boxing</li>
+        </ul>`;
   //some html
+  document.querySelector("#div1").innerHTML = newHtml;
 }
-
 function updateFruits() {
-  console.log("update fruites  clicked");
-
-  //innerText , for loop or while loop.
-  //querySelectorAll. Only replace the fruits using innertext
-  ////innnertText and loop<fruits>
+  console.log("update fruits clicked");
+  const fruitElements = document
+    .querySelector("#div1")
+    .querySelectorAll(".list-item");
+  for (let f = 0; f > fruitElements.length; f++) {
+    const singleFruitElement = fruitElements[f];
+    singleFruitElement.innerText = otherFruits[f];
+  }
 }
+//inner texts & loops {fruits}

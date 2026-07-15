@@ -21,3 +21,19 @@ console.log(queryListAll);
 for (let k = 0; k < queryListAll.length; k++) {
   console.log(queryListAll[k]);
 }
+
+/*Now how to update DOM elements 
+1.innerHtml{replaces the html}
+2.innerText{replaces the inner texts}
+3.Buttons
+1.
+*/
+function original() {
+  console.log("Original clicked");
+}
+function replace() {
+  console.log("replace clicked");
+}
+function updateFruits() {
+  console.log("update fruits clicked");
+}
