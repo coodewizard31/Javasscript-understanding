@@ -1,9 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import AmazonPage from "./AmazonPage";
-import "./AmazonPage/index.css";
+
+import Mapping from "./Mapping";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <AmazonPage />
+    <Mapping/>
   </StrictMode>,
 );
