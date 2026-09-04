@@ -52,7 +52,7 @@ class BankAccount:
 
 john = BankAccount(name="John Mwangi", balance=0, account_no="223344223")
 
-print("John blance ", john.balance)
-# john.show_account_details()
-# it is easily accessable ->
-# john.balance=-4000 #setting -> updating the property
+#print(*John blance ",john.balance")
+print("Bank Name",BankAccount.bank_name)#class property
+print(john.account_no)#john
+print("Client",BankAccount.Clients)#class property
