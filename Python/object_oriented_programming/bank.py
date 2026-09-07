@@ -48,6 +48,23 @@ class BankAccount:
         print(f"Owner {self.name}")
         print(f"Balance {self.balance}")
         print(f"Account No {self.account_no}")
+    #_________________
+    #Static Method. <classmmethod><cls> @staticmethod ->
+    @staticmethod
+    def calaculate_interest(amount,year):
+        rate=10
+        interest_per_year=amount*(rate/100)
+        interest_total=interest_per_year*year
+        total=amount+interest_total
+        print(f"It you take a loan. of ${amount} , interest rate per year {interest_per_year}")
+        print(f"Total interest {interest_total}, total to pay {total} after {year}")
+        #_______
+        #class Method.
+        #class itself.
+        @classmmethod
+        def add_client(cls):
+            cls.client=cls.clients+1gi
+    
 
 
 john = BankAccount(name="John Mwangi", balance=0, account_no="223344223")
